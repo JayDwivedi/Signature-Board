@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Signature Board</string>
+    <string name="signature_drawing">Save Signature</string>
+    <string name="clear_board">Clear Board</string>
+</resources>
