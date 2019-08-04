@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                     Uri uri = Uri.fromFile(file);
 
                 } else
-                    Toast.makeText(getApplicationContext(), "Please give storage read/write permission", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Please give storage read/write", Toast.LENGTH_SHORT).show();
 
 
             }
