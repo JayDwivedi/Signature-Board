@@ -5,10 +5,10 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Build;
+import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                     Uri uri = Uri.fromFile(file);
 
                 } else
-                    Toast.makeText(getApplicationContext(), "Please give storage write permission", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Please give storage read/write permission", Toast.LENGTH_SHORT).show();
 
 
             }
@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
 
             fileOutputStream.write(bytes.toByteArray());
             fileOutputStream.close();
-            Toast.makeText(this,"File Saved",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "File Saved", Toast.LENGTH_SHORT).show();
             return file;
         } catch (IOException e) {
             e.printStackTrace();
